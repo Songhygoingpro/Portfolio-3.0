@@ -67,7 +67,10 @@ const Header = () => {
       });
     }
     setMenuOpen(false);
+    
   };
+
+
 
   return (
     <div className="w-[100vw] md:w-auto justify-self-center h-12 flex items-center p-8 justify-end md:justify-center mt-4 z-[99]">
@@ -78,8 +81,8 @@ const Header = () => {
         <div
           className="menu grid items-center px-4"
           style={{
-            width: menuOpen ? "calc(100vw - 3rem)" : "0",
-            height: menuOpen ? "calc(100vh - 2rem)": "0",
+            width: menuOpen ? "calc(100vw - 2rem)" : "0",
+            height: menuOpen ? "calc(100dvh - 2rem)": "0",
             overflow: "hidden",
             transition: "width 0.3s ease-in-out, height 0.3s ease"
           }}
@@ -87,7 +90,7 @@ const Header = () => {
           <ul className=" flex flex-col gap-4">
             {tabs.map((tab) => (
               <li key={tab} className="text-5xl text-left font-semibold">
-                <a href={`#${tab.toLowerCase()}`} onClick={() => handleTabClick(tab)}>
+                <a href={`#${tab.toLowerCase()}-anchor`} onClick={() => handleTabClick(tab)}>
                   {tab}.
                 </a>
               </li>
