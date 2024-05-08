@@ -1,8 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {Pagination} from 'swiper/modules';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default () => {
   useEffect(() => {
@@ -49,7 +51,9 @@ export default () => {
     <div className="flex justify-center items-center">
       <h2 className="text-4xl font-semibold" data-aos="fade-up-20" data-aos-offset="130">Skills</h2>
     </div>
-    <Swiper className='grid grid-cols-3 w-[100%] z-10'
+    <Swiper className='grid grid-cols-3 w-[100%] z-10 !pb-10'
+      modules={[Pagination]}
+      pagination={{ clickable: true }}
       spaceBetween={50}
       slidesPerView={1}
       breakpoints={{
@@ -207,6 +211,7 @@ export default () => {
             </div>
           </div>
         </SwiperSlide>
+        
     </Swiper>
     </div>
   );

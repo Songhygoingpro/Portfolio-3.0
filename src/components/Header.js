@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
 const tabs = ["Home", "Skills", "Projects", "Contact"];
 
@@ -70,12 +70,10 @@ const Header = () => {
     
   };
 
-
-
   return (
     <div className="w-[100vw] md:w-auto justify-self-center h-12 flex items-center p-8 justify-end md:justify-center mt-4 z-[99]">
       <div className="md:hidden block">
-        <div className={`fixed top-4 right-4 bg-purple-500 hover:bg-purple-400 p-[2px]  z-20 ${menuOpen ? 'rounded-bl-md rounded-tr-md' : 'rounded-md'}`}>
+        <div className={`fixed top-4 right-4 bg-indigo-600 hover:bg-indigo-600 p-[2px]  z-20 ${menuOpen ? 'rounded-bl-md rounded-tr-md' : 'rounded-md'}`}>
           <Hamburger toggled={menuOpen} toggle={handleToggle}  size={28} />
         </div>
         <div
@@ -84,13 +82,13 @@ const Header = () => {
             width: menuOpen ? "calc(100vw - 2rem)" : "0",
             height: menuOpen ? "calc(100dvh - 2rem)": "0",
             overflow: "hidden",
-            transition: "width 0.3s ease-in-out, height 0.3s ease"
+            transition: "width 0.3s ease-in-out, height 0.3s ease" 
           }}
         >
           <ul className=" flex flex-col gap-4">
             {tabs.map((tab) => (
               <li key={tab} className="text-5xl text-left font-semibold">
-                <a href={`#${tab.toLowerCase()}-anchor`} onClick={() => handleTabClick(tab)}>
+                <a href={`#${tab.toLowerCase()}-anchor`} onClick={() => handleTabClick(tab)} >
                   {tab}.
                 </a>
               </li>

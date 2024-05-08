@@ -15,6 +15,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import 'swiper/css/pagination';
+import {Pagination} from 'swiper/modules';
 
 function Project() {
   useEffect(() => {
@@ -63,7 +65,9 @@ function Project() {
           Web Development
         </h2>
         <Swiper
-          className="text-black flex gap-8 w-[100%] mySwiper"
+          className="text-black flex gap-8 w-[100%] mySwiper !pb-10"
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
@@ -133,7 +137,9 @@ function Project() {
           Graphic Design
         </h2>
         <Swiper
-          className="text-black flex gap-8 w-[100%] mySwiper "
+          className="text-black flex gap-8 w-[100%] mySwiper !pb-10"
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
@@ -199,7 +205,9 @@ function Project() {
           Figma Design
         </h2>
         <Swiper
-          className="text-black flex gap-8 w-[100%] mySwiper"
+          className="text-black flex gap-8 w-[100%] mySwiper !pb-10"
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{

@@ -7,9 +7,9 @@ function Home() {
     <div className="text-white md:flex grid  justify-center items-center px-4 gap-4  z-0 overflow-hidden" >
   <div className="home-content flex flex-col gap-4 p-4 md:p-8" data-aos="fade-up-20">
     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold font-sans text-left">
-      Hello, I'm Songhy<span className="text-purple-500">.</span>
+      Hello, I'm Songhy<span className="text-indigo-600">.</span>
     </h1>   
-    <h2 className="text-2xl md:text-4xl font-bold  text-left">I'm a <span className="text-purple-500">Computer Science student</span></h2>
+    <h2 className="text-2xl md:text-4xl font-bold  text-left">I'm a <span className="text-indigo-600">Computer Science student</span></h2>
     <h2 className="text-lg md:text-xl font-medium  text-left ">
       I spend my day focus on <br />
       Graphic Design & Web Development{" "}
@@ -18,7 +18,7 @@ function Home() {
       <a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="hover:fill-purple-500"
+          className="hover:fill-indigo-600"
           width="2.5rem"
           height="2.5rem"
           viewBox="0 0 24 24"
@@ -32,7 +32,7 @@ function Home() {
       <a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="hover:fill-purple-500"
+          className="hover:fill-indigo-600"
           fill="#FFFFFF"
           width="2.5rem"
           height="2.5rem"
@@ -43,7 +43,7 @@ function Home() {
       </a>
     </div>
   </div>
-  <div className="">
+  <div className="flex justify-center">
   <img data-aos="fade-up-20" src={pf} className="w-auto object-cover h-fit" alt="Profile" /></div>
 </div>
 
