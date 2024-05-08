@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/Portfolio-3.0/static/css/main.454473bf.css",
-    "main.js": "/Portfolio-3.0/static/js/main.791eab17.js",
+    "main.css": "/Portfolio-3.0/static/css/main.db205b88.css",
+    "main.js": "/Portfolio-3.0/static/js/main.34b25397.js",
     "static/js/453.0a36081d.chunk.js": "/Portfolio-3.0/static/js/453.0a36081d.chunk.js",
-    "static/media/pf.png": "/Portfolio-3.0/static/media/pf.aec0a6e877085fe7e3ee.png",
+    "static/media/pf.png": "/Portfolio-3.0/static/media/pf.8c48d39cb49fdf637888.png",
     "static/media/project-shopify-theme.png": "/Portfolio-3.0/static/media/project-shopify-theme.88dfa5b1aaa82eb636ef.png",
     "static/media/project-e-commerce.png": "/Portfolio-3.0/static/media/project-e-commerce.89b8eff05702357179eb.png",
     "static/media/khmer_new_year_post.png": "/Portfolio-3.0/static/media/khmer_new_year_post.284baf38d7aa9a567944.png",
@@ -17,12 +17,12 @@
     "static/media/icons8-javascript.svg": "/Portfolio-3.0/static/media/icons8-javascript.6bfd20368a5d7b6b0f4da32bb619a474.svg",
     "static/media/icons8-tailwind-css.svg": "/Portfolio-3.0/static/media/icons8-tailwind-css.477af35736f877608cc90f3d09173923.svg",
     "index.html": "/Portfolio-3.0/index.html",
-    "main.454473bf.css.map": "/Portfolio-3.0/static/css/main.454473bf.css.map",
-    "main.791eab17.js.map": "/Portfolio-3.0/static/js/main.791eab17.js.map",
+    "main.db205b88.css.map": "/Portfolio-3.0/static/css/main.db205b88.css.map",
+    "main.34b25397.js.map": "/Portfolio-3.0/static/js/main.34b25397.js.map",
     "453.0a36081d.chunk.js.map": "/Portfolio-3.0/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.454473bf.css",
-    "static/js/main.791eab17.js"
+    "static/css/main.db205b88.css",
+    "static/js/main.34b25397.js"
   ]
 }
