@@ -6,15 +6,17 @@ import MatrixBackground from './components/MatrixBackground';
 import Skill from './components/Skill';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import Mymarquee from './components/Mymarquee';
 
 function App() {
 
   return (
       <div className="App " >
-        <section id="home" className=' grid grid-rows-[5rem_1fr_5rem] justify-center md:h-[100vh] h-auto overflow-hidden'>
+        <section id="home" className=' grid grid-rows-[5rem_1fr_auto] justify-center md:h-[100vh] h-auto overflow-hidden'>
           <MatrixBackground />
           <Header/>
           <Home/>
+          <Mymarquee/>
         </section>
         <section id="skills" className='z-10 bg-[#000336] md:px-10 px-4 py-6 grid '>
           <Skill/>

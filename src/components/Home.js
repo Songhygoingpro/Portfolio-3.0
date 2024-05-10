@@ -4,7 +4,7 @@ import pf from "../img/pf.png";
 function Home() {
 
   return (
-    <div className="text-white md:flex grid  justify-center items-center px-4 gap-4  z-0 overflow-hidden" >
+    <div className="text-white md:flex grid  justify-center items-center px-4 gap-4  z-0 overflow-hidden w-fit self-center justify-self-center" >
   <div className="home-content flex flex-col gap-4 p-4 md:p-8" data-aos="fade-up-20">
     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold font-sans text-left">
       Hello, I'm Songhy<span className="text-indigo-600">.</span>

@@ -60,12 +60,12 @@ function Project() {
   return (
     <div className=" bg-[] grid gap-12" >
       <h1 className="text-4xl font-semibold"  data-aos="fade-up-20">Projects</h1>
-      <div className="w-[100%] bg-[#D9D9D9] p-4 md:p-8 rounded-xl grid gap-6">
+      <div className="w-[100%] bg-[#D9D9D9] p-4 md:p-8 rounded-xl grid gap-6" data-aos="fadeUp ">
         <h2 className="text-3xl font-medium text-black text-start" data-aos="fade-up-20">
           Web Development
         </h2>
         <Swiper
-          className="text-black flex gap-8 w-[100%] mySwiper !pb-10"
+          className="text-black flex gap-8 w-[100%] mySwiper max-[768px]:!pb-10"
           modules={[Pagination]}
           pagination={{ clickable: true }}
           spaceBetween={20}
@@ -132,17 +132,21 @@ function Project() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className=" bg-[#D9D9D9] md:p-8 p-4 rounded-xl grid gap-6">
+      <div className=" bg-[#D9D9D9] md:p-8 p-4 rounded-xl grid gap-6" data-aos="fadeUp">
         <h2 className="text-3xl font-medium text-black text-start"  data-aos="fade-up-20">
           Graphic Design
         </h2>
         <Swiper
-          className="text-black flex gap-8 w-[100%] mySwiper !pb-10"
+          className="text-black !flex !justify-start gap-1 w-[100%] mySwiper  max-[768px]:!pb-10"
           modules={[Pagination]}
           pagination={{ clickable: true }}
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
+            1536: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
             1024: {
               slidesPerView: 3,
               spaceBetween: 20,
@@ -200,12 +204,12 @@ function Project() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="w-[100%] bg-[#D9D9D9] md:p-8 p-4 rounded-xl grid gap-6">
+      <div className="w-[100%] bg-[#D9D9D9] md:p-8 p-4 rounded-xl grid gap-6" data-aos="fadeUp">
         <h2 className="text-3xl font-medium text-black text-start"  data-aos="fade-up-20">
           Figma Design
         </h2>
         <Swiper
-          className="text-black flex gap-8 w-[100%] mySwiper !pb-10"
+          className="text-black flex gap-8 w-[100%] mySwiper max-[768px]:!pb-10"
           modules={[Pagination]}
           pagination={{ clickable: true }}
           spaceBetween={20}
