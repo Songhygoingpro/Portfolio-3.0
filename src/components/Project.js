@@ -71,10 +71,7 @@ function Project() {
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
-            1536: {
-              slidesPerView: 5,
-              spaceBetween: 20,
-            },
+            
             1024: {
               slidesPerView: 3,
               spaceBetween: 20,
@@ -147,10 +144,6 @@ function Project() {
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
-            1536: {
-              slidesPerView: 5,
-              spaceBetween: 20,
-            },
             1024: {
               slidesPerView: 3,
               spaceBetween: 20,
@@ -219,10 +212,6 @@ function Project() {
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
-            1536: {
-              slidesPerView: 5,
-              spaceBetween: 20,
-            },
             1024: {
               slidesPerView: 3,
               spaceBetween: 20,
