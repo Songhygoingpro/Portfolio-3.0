@@ -82,27 +82,37 @@ const Header = () => {
           <Hamburger toggled={menuOpen} toggle={handleToggle} size={28} />
         </div>
         <div
-          className="menu grid items-center px-4"
+          className="menu grid items-center p-4"
           style={{
             width: menuOpen ? "calc(100vw - 2rem)" : "0",
             height: menuOpen ? "calc(100dvh - 2rem)" : "0",
             overflow: "hidden",
-            transition: "width 0.3s ease-in-out, height 0.3s ease",
+            transition: menuOpen ? "width 0.3s ease-in-out, height 0.3s ease" : "height 0.3s ease 1s, width 0.3s ease 1s",
           }}
         >
-          <ul className=" flex flex-col gap-4">
-            {tabs.map((tab) => (
-              <li key={tab} className="text-5xl text-left font-semibold">
-                <a
-                  href={`#${tab.toLowerCase()}-anchor`}
-                  onClick={() => handleTabClick(tab)}
-                >
-                  {tab}.
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div className="flex justify-end">
+          <ul
+          className="flex flex-col gap-4"
+        >
+          {tabs.map((tab, index) => (
+            <li
+              key={tab}
+              className="text-5xl text-left font-semibold"
+              style={{
+                transitionDelay: menuOpen ? `calc(${index+1} * 0.2s)` : `calc(${tabs.length - (index+1)} * 0.2s)`,
+                opacity: menuOpen ? "1" : "0",
+                transition: "opacity 0.3s ease",
+              }}
+            >
+              <a
+                href={`#${tab.toLowerCase()}-anchor`}
+                onClick={() => handleTabClick(tab)}
+              >
+                {tab}.
+              </a>
+            </li>
+          ))}
+        </ul>
+          <div className="flex justify-end self-end">
             <a href={Resume} className="bg-[#392EF0] p-6 rounded-full block ">
               <img src={CV} alt="" />
             </a>

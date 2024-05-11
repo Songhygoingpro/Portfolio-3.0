@@ -77,11 +77,11 @@ export default () => {
    <SwiperSlide data-aos="fade-up-20"  className="!flex !flex-col !items-center !justify-start !gap-6 p-8 bg-white  transition-colors duration-300 ease-in-out hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8]  text-white  rounded-md  border-3">
           <div className="flex gap-x-3 items-center">
             <img
-              width="50px"
-              height="50px"
+              width="40px"
+              height="40px"
               src={web_dev}
             />
-            <h3 className="text-3xl font-semibold">Web Development</h3>
+            <h3 className="md:text-3xl text-2xl font-semibold">Web Development</h3>
           </div>
           <div className="flex justify-center">
             <div className="grid grid-cols-[1fr_1fr_1fr] gap-10 h-auto justify-between items-center ">
@@ -164,11 +164,11 @@ export default () => {
       <SwiperSlide data-aos-delay="100" data-aos="fade-up-20" className="!flex !flex-col !items-center !justify-start !gap-6 p-8 bg-white  transition-colors duration-300 ease-in-out hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8]  text-white rounded-md border-3">
           <div className="flex gap-x-3 items-center ">
             <img
-              width="50px"
-              height="50px"
+              width="40px"
+              height="40px"
               src={vector}
             />
-            <h3 className="text-3xl font-semibold">Graphic Design</h3>
+            <h3 className="md:text-3xl text-2xl font-semibold">Graphic Design</h3>
           </div>
           <div className="flex gap-10 w-fit items-start">
             <div className="flex flex-col items-center  justify-center w-fit transition-transform duration-300 ease-in-out transform hover:scale-110">
@@ -197,11 +197,11 @@ export default () => {
         <SwiperSlide  data-aos="fade-up-20" data-aos-delay="200" className="!flex !flex-col !items-center !justify-start !gap-6 p-8 bg-white  transition-colors duration-300 ease-in-out hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8]  text-white rounded-md border-3">
           <div className="flex gap-x-3 items-center justify-center">
             <img
-              width="50px"
-              height="50px"
+              width="40px"
+              height="40px"
               src={ux_design}
             />
-            <h3 className="text-3xl font-semibold">UX/UI</h3>
+            <h3 className="md:text-3xl text-2xl font-semibold">UX/UI</h3>
           </div>
           <div className="grid w-full justify-start ">
             <div className="flex flex-col w-fit transition-transform duration-300 ease-in-out transform hover:scale-110">

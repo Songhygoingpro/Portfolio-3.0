@@ -61,7 +61,7 @@ function Project() {
     <div className=" bg-[] grid gap-12" >
       <h1 className="text-4xl font-semibold"  data-aos="fade-up-20">Projects</h1>
       <div className="w-[100%] bg-white transition-colors duration-300 ease-in-out max-w-[1280px] hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8] p-4 md:p-8 rounded-xl grid gap-6" data-aos="fadeUp ">
-        <h2 className="text-3xl font-medium text-white text-start" data-aos="fade-up-20">
+        <h2 className="text-2xl font-medium text-white text-start" data-aos="fade-up-20">
           Web Development
         </h2>
         <Swiper
@@ -90,7 +90,7 @@ function Project() {
         >
           <SwiperSlide className="!grid justify-start gap-[8px]"  data-aos="fade-up-20">
             <img src={To_do} />
-            <h3 className="text-2xl font-medium  text-start">To-do List</h3>
+            <h3 className="text-xl font-medium  text-start">To-do List</h3>
             <div className="flex gap-2 items-center">
               <p>Made with:</p>
               <img src={JS} alt="" />
@@ -113,7 +113,7 @@ function Project() {
           </SwiperSlide>
           <SwiperSlide className="!grid justify-start gap-[6px]"  data-aos="fade-up-20" data-aos-delay="100" >
             <img src={E_commerce} />
-            <h3 className="text-2xl font-medium  text-start">E-commerce</h3>
+            <h3 className="text-xl font-medium  text-start">E-commerce</h3>
             <div className="flex gap-2 items-center">
               <p>Made with:</p>
               <img src={JS} alt="" />
@@ -137,7 +137,7 @@ function Project() {
         </Swiper>
       </div>
       <div className="w-[100%] bg-white  transition-colors duration-300 ease-in-out max-w-[1280px] hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8] md:p-8 p-4 rounded-xl grid gap-6" data-aos="fadeUp">
-        <h2 className="text-3xl font-medium text-white text-start"  data-aos="fade-up-20">
+        <h2 className="text-2xl font-medium text-white text-start"  data-aos="fade-up-20">
           Graphic Design
         </h2>
         <Swiper
@@ -166,7 +166,7 @@ function Project() {
         >
           <SwiperSlide className="!grid justify-start gap-[6px]"  data-aos="fade-up-20">
             <img src={Khmer_new_year_post} />
-            <h3 className="text-2xl font-medium  text-start">
+            <h3 className="text-xl font-medium  text-start">
               Khmer New Year Poster
             </h3>
             <div className="flex gap-2 items-center">
@@ -182,7 +182,7 @@ function Project() {
           </SwiperSlide>
           <SwiperSlide className="!grid justify-start gap-[6px]"  data-aos="fade-up-20" data-aos-delay="100">
             <img src={Cafe_logo} />
-            <h3 className="text-2xl font-medium  text-start">Cafe Logo</h3>
+            <h3 className="text-xl font-medium  text-start">Cafe Logo</h3>
             <div className="flex gap-2 items-center">
               <p>Made with:</p>
               <img src={Coreldraw} alt="" />
@@ -195,7 +195,7 @@ function Project() {
           </SwiperSlide>
           <SwiperSlide className="!grid justify-start gap-[6px]"  data-aos="fade-up-20" data-aos-delay="200">
             <img src={HRU_logo} />
-            <h3 className="text-2xl font-medium  text-start">HRU Logo</h3>
+            <h3 className="text-xl font-medium  text-start">HRU Logo</h3>
             <div className="flex gap-2 items-center">
               <p>Made with:</p>
               <img src={Coreldraw} alt="" />
@@ -209,7 +209,7 @@ function Project() {
         </Swiper>
       </div>
       <div className="w-[100%] bg-white  transition-colors duration-300 ease-in-out max-w-[1280px] hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8] md:p-8 p-4 rounded-xl grid gap-6" data-aos="fadeUp">
-        <h2 className="text-3xl font-medium text-white text-start"  data-aos="fade-up-20">
+        <h2 className="text-2xl font-medium text-white text-start"  data-aos="fade-up-20">
           Figma Design
         </h2>
         <Swiper
@@ -238,7 +238,7 @@ function Project() {
         >
           <SwiperSlide className="!grid justify-start gap-[6px]"  data-aos="fade-up-20">
             <img src={E_commerce} />
-            <h3 className="text-2xl font-medium  text-start">
+            <h3 className="text-xl font-medium  text-start">
               Khmer New Year Poster
             </h3>
             <div className="flex gap-2 items-center">
@@ -254,7 +254,7 @@ function Project() {
           </SwiperSlide>
           <SwiperSlide className="!grid justify-start gap-[6px]"  data-aos="fade-up-20" data-aos-delay="100">
             <img src={Shopifytheme} />
-            <h3 className="text-2xl font-medium  text-start">Cafe Logo</h3>
+            <h3 className="text-xl font-medium  text-start">Cafe Logo</h3>
             <div className="flex gap-2 items-center">
               <p>Made with:</p>
               <img src={Coreldraw} alt="" />
@@ -267,7 +267,7 @@ function Project() {
           </SwiperSlide>
           <SwiperSlide className="!grid justify-start gap-[6px]"  data-aos="fade-up-20" data-aos-delay="200">
             <img src={webbuilding} className="max-w-[100%] h-auto " />
-            <h3 className="text-2xl font-medium  text-start">HRU Logo</h3>
+            <h3 className="text-xl font-medium  text-start">HRU Logo</h3>
             <div className="flex gap-2 items-center">
               <p>Made with:</p>
               <img src={Coreldraw} alt="" />
