@@ -87,7 +87,7 @@ const Header = () => {
             width: menuOpen ? "calc(100vw - 2rem)" : "0",
             height: menuOpen ? "calc(100dvh - 2rem)" : "0",
             overflow: "hidden",
-            transition: menuOpen ? "width 0.3s ease-in-out, height 0.3s ease" : "height 0.3s ease 1s, width 0.3s ease 1s",
+            transition: menuOpen ? "width 0.3s ease-in-out, height 0.3s ease" : "height 0.3s ease 0.6s, width 0.3s ease 0.6s",
           }}
         >
           <ul
@@ -98,7 +98,7 @@ const Header = () => {
               key={tab}
               className="text-5xl text-left font-semibold"
               style={{
-                transitionDelay: menuOpen ? `calc(${index+1} * 0.2s)` : `calc(${tabs.length - (index+1)} * 0.2s)`,
+                transitionDelay: menuOpen ? `calc(${index+1} * 0.15s)` : `calc(${tabs.length - (index+1)} * 0.15s)`,
                 opacity: menuOpen ? "1" : "0",
                 transition: "opacity 0.3s ease",
               }}

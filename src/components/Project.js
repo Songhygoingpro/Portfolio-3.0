@@ -58,7 +58,7 @@ function Project() {
     };
   }, []);
   return (
-    <div className=" bg-[] grid gap-12" >
+    <div className=" bg-[] grid gap-12 justify-center" >
       <h1 className="text-4xl font-semibold"  data-aos="fade-up-20">Projects</h1>
       <div className="w-[100%] bg-white transition-colors duration-300 ease-in-out max-w-[1280px] hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8] p-4 md:p-8 rounded-xl grid gap-6" data-aos="fadeUp ">
         <h2 className="text-2xl font-medium text-white text-start" data-aos="fade-up-20">

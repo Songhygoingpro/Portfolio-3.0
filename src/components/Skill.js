@@ -50,7 +50,7 @@ export default () => {
   }, []);
 
   return (
-    <div className="grid grid-rows-[5rem_1fr] gap-4 font-medium skill" >
+    <div className="grid grid-rows-[5rem_1fr] gap-4 font-medium w-[100%] max-w-[1280px]" >
     <div className="flex justify-center items-center">
       <h2 className="text-4xl font-semibold" data-aos="fade-up-20" data-aos-offset="130">Skills</h2>
     </div>

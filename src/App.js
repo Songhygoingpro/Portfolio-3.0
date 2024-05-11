@@ -19,10 +19,10 @@ function App() {
           <Home/>
           <Mymarquee/>
         </section>
-        <section id="skills" className='z-10 bg-[#000336] md:px-10 px-4 py-6 grid '>
+        <section id="skills" className='z-10 bg-[#000336] justify-center md:px-10 px-4 py-6 grid '>
           <Skill/>
         </section>
-        <section id="projects" className="z-10 bg-[#000336] md:px-10 px-4 pt-6 pb-12 grid  ">
+        <section id="projects" className="z-10 bg-[#000336] justify-center md:px-10 px-4 pt-6 pb-12 grid  ">
           <Project/>
         </section>
         <section id='contact'  className='z-10 '><Footer/></section>
