@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import CV from "../img/curriculum-vitae.png";
+import Resume from "../img/Resume.pdf";
 
 const tabs = ["Home", "Skills", "Projects", "Contact"];
 
@@ -54,7 +56,7 @@ const Header = () => {
   }, []);
 
   const handleToggle = () => {
-    setMenuOpen(prevMenuOpen => !prevMenuOpen);
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
 
   const handleTabClick = (tab) => {
@@ -67,33 +69,44 @@ const Header = () => {
       });
     }
     setMenuOpen(false);
-    
   };
 
   return (
     <div className="w-[100vw] md:w-auto justify-self-center h-12 flex items-center p-8 justify-end md:justify-center mt-4 z-[99]">
       <div className="md:hidden block">
-        <div className={`fixed top-4 right-4 bg-indigo-600 hover:bg-indigo-600 p-[2px]  z-20 ${menuOpen ? 'rounded-bl-md rounded-tr-md' : 'rounded-md'}`}>
-          <Hamburger toggled={menuOpen} toggle={handleToggle}  size={28} />
+        <div
+          className={`fixed top-4 right-4 bg-indigo-600 hover:bg-indigo-600 p-[2px]  z-20 ${
+            menuOpen ? "rounded-bl-md rounded-tr-md" : "rounded-md"
+          }`}
+        >
+          <Hamburger toggled={menuOpen} toggle={handleToggle} size={28} />
         </div>
         <div
           className="menu grid items-center px-4"
           style={{
             width: menuOpen ? "calc(100vw - 2rem)" : "0",
-            height: menuOpen ? "calc(100dvh - 2rem)": "0",
+            height: menuOpen ? "calc(100dvh - 2rem)" : "0",
             overflow: "hidden",
-            transition: "width 0.3s ease-in-out, height 0.3s ease" 
+            transition: "width 0.3s ease-in-out, height 0.3s ease",
           }}
         >
           <ul className=" flex flex-col gap-4">
             {tabs.map((tab) => (
               <li key={tab} className="text-5xl text-left font-semibold">
-                <a href={`#${tab.toLowerCase()}-anchor`} onClick={() => handleTabClick(tab)} >
+                <a
+                  href={`#${tab.toLowerCase()}-anchor`}
+                  onClick={() => handleTabClick(tab)}
+                >
                   {tab}.
                 </a>
               </li>
             ))}
           </ul>
+          <div className="flex justify-end">
+            <a href={Resume} className="bg-[#392EF0] p-6 rounded-full block ">
+              <img src={CV} alt="" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="px-4 py-4 top-4 fixed bg-slate-900 md:flex hidden items-center flex-wrap justify-center gap-4 rounded-full">

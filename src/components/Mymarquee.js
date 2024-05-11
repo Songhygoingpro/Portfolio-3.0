@@ -1,31 +1,12 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import Marquee from "react-fast-marquee";
-import { throttle } from 'lodash';
 
 const Mymarquee = () => {
-
-  const [autoFill, setAutoFill] = useState(false);
-
-  useEffect(() => {
-    // Throttled function to update autofill
-    const updateAutoFill = throttle(() => {
-      setAutoFill(window.innerWidth < 768);
-    }, 250); // Throttle so it only fires at most once per 250ms
-    
-    updateAutoFill();
-
-    window.addEventListener('resize', updateAutoFill);
-
-    return () => {
-      updateAutoFill.cancel();
-      window.removeEventListener('resize', updateAutoFill);
-    };
-  }, []);
 
   return (
     <div>
       <Marquee 
-      direction="left" className='bg-[#161947] md:!w-[100vw]'
+      direction="left" className='bg-[#161947] md:!w-[100vw] self-end'
     //   speed={100}
       >
         <div className='flex py-6 items-center justify-around w-fit gap-10 md:w-[100vw]'>

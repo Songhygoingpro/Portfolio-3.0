@@ -5,6 +5,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import vector from '../img/vector.png';
+import web_dev from '../img/web-development.png';
+import ux_design from '../img/user-experience.png';
 
 export default () => {
   useEffect(() => {
@@ -71,12 +74,12 @@ export default () => {
       onSwiper={(swiper) => console.log(swiper)}
       onTouchEnd={enableAOS} 
     >
-   <SwiperSlide data-aos="fade-up-20"  className="!flex !flex-col !items-center !justify-start !gap-6 p-8 bg-[#D9D9D9]  text-black rounded-md border-[#7C7C7C] border-3">
+   <SwiperSlide data-aos="fade-up-20"  className="!flex !flex-col !items-center !justify-start !gap-6 p-8 bg-white  transition-colors duration-300 ease-in-out hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8]  text-white  rounded-md  border-3">
           <div className="flex gap-x-3 items-center">
             <img
               width="50px"
               height="50px"
-              src="https://www.svgrepo.com/show/158167/web-development.svg"
+              src={web_dev}
             />
             <h3 className="text-3xl font-semibold">Web Development</h3>
           </div>
@@ -158,12 +161,12 @@ export default () => {
             </div>
           </div>
           </SwiperSlide>
-      <SwiperSlide data-aos-delay="100" data-aos="fade-up-20" className="!flex !flex-col !items-center !justify-start !gap-6 p-8 bg-[#D9D9D9]  text-black rounded-md border-[#7C7C7C] border-3">
+      <SwiperSlide data-aos-delay="100" data-aos="fade-up-20" className="!flex !flex-col !items-center !justify-start !gap-6 p-8 bg-white  transition-colors duration-300 ease-in-out hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8]  text-white rounded-md border-3">
           <div className="flex gap-x-3 items-center ">
             <img
               width="50px"
               height="50px"
-              src="https://www.svgrepo.com/show/282489/graphic-design-diameter.svg"
+              src={vector}
             />
             <h3 className="text-3xl font-semibold">Graphic Design</h3>
           </div>
@@ -191,12 +194,12 @@ export default () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide  data-aos="fade-up-20" data-aos-delay="200" className="!flex !flex-col !items-center !justify-start !gap-6 p-8 bg-[#D9D9D9]  text-black rounded-md border-[#7C7C7C] border-3">
+        <SwiperSlide  data-aos="fade-up-20" data-aos-delay="200" className="!flex !flex-col !items-center !justify-start !gap-6 p-8 bg-white  transition-colors duration-300 ease-in-out hover:bg-opacity-20 bg-opacity-10 border-2 border-[#625FB8]  text-white rounded-md border-3">
           <div className="flex gap-x-3 items-center justify-center">
             <img
               width="50px"
               height="50px"
-              src="https://www.svgrepo.com/show/430362/ux-line-circle.svg"
+              src={ux_design}
             />
             <h3 className="text-3xl font-semibold">UX/UI</h3>
           </div>

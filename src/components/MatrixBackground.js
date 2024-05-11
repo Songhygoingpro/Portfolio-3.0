@@ -21,7 +21,7 @@ const Square = () => {
         setColor(getRandomColor());
       }
       changecount++;
-    }, 2000); // Adjust interval duration to 3 seconds (1 second before color fade)
+    }, 2000); 
 
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, []);

@@ -12,7 +12,7 @@ function Home() {
     <h2 className="text-2xl md:text-4xl font-bold  text-left">I'm a <span className="text-indigo-600">Computer Science student</span></h2>
     <h2 className="text-lg md:text-xl font-medium  text-left ">
       I spend my day focus on <br />
-      Graphic Design & Web Development{" "}
+     <span className='underline decoration-sky-600'>Web Design</span> & <span className='underline decoration-sky-600'>Web Development</span>
     </h2>
     <div className="flex gap-2">
       <a>
