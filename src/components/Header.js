@@ -75,7 +75,7 @@ const Header = () => {
     <div className="w-[100vw] md:w-auto justify-self-center h-12 flex items-center p-8 justify-end md:justify-center mt-4 z-[99]">
       <div className="md:hidden block">
         <div
-          className={`fixed top-4 right-4 bg-indigo-600 hover:bg-indigo-600 p-[2px]  z-20 ${
+          className={`fixed top-4 2xl:top-8 right-4 bg-indigo-600 hover:bg-indigo-600 p-[2px]  z-20 ${
             menuOpen ? "rounded-bl-md rounded-tr-md" : "rounded-md"
           }`}
         >
@@ -87,7 +87,7 @@ const Header = () => {
             width: menuOpen ? "calc(100vw - 2rem)" : "0",
             height: menuOpen ? "calc(100dvh - 2rem)" : "0",
             overflow: "hidden",
-            transition: menuOpen ? "width 0.3s ease-in-out, height 0.3s ease" : "height 0.3s ease 0.6s, width 0.3s ease 0.6s",
+            transition: menuOpen ? "width 0.3s ease-in-out, height 0.3s ease" : "height 0.3s ease 0.7s, width 0.3s ease 0.7s",
           }}
         >
           <ul
@@ -98,9 +98,8 @@ const Header = () => {
               key={tab}
               className="text-5xl text-left font-semibold"
               style={{
-                transitionDelay: menuOpen ? `calc(${index+1} * 0.15s)` : `calc(${tabs.length - (index+1)} * 0.15s)`,
                 opacity: menuOpen ? "1" : "0",
-                transition: "opacity 0.3s ease",
+                transition: `opacity 0.3s ease ${menuOpen ? `calc(${index+1} * 0.15s)` : `calc(${(tabs.length + 1) - (index+1)} * 0.15s)`}`,
               }}
             >
               <a
@@ -113,7 +112,12 @@ const Header = () => {
           ))}
         </ul>
           <div className="flex justify-end self-end">
-            <a href={Resume} className="bg-[#392EF0] p-6 rounded-full block ">
+            <a href={Resume} className="bg-[#392EF0] p-6 rounded-full block "
+             style={{
+              opacity: menuOpen ? "1" : "0",
+              transition: `opacity 0.3s ease ${menuOpen ? `calc(${tabs.length+1} * 0.15s)` : `calc(${tabs.length - tabs.length} * 0.15s)`}`,
+            }}
+            >
               <img src={CV} alt="" />
             </a>
           </div>

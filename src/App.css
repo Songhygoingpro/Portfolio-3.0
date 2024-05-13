@@ -59,7 +59,7 @@ img {
 }
 
 [data-aos="fade-up-20"] {
-  opacity: 0;
+  /* opacity: 0; */
   transition-property: transform, opacity;
 
   &.aos-animate {
@@ -67,11 +67,39 @@ img {
   }
 
     transform: translateY(20px) !important;
+    z-index: 10 !important;
 
     &.aos-animate {
       transform: translateY(0) !important;
     }
 }
+
+.reveal-holder {
+  position: relative;
+  display: flex;
+  width: fit-content;
+}
+
+.reveal-block {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 116%;
+  background: #4f46e5;
+  z-index: 20;
+}
+
+[data-aos="reveal-right"] {
+  transform: scaleX(1);
+  transform-origin: 100% 0%;
+  transition-property: transform;
+  transition-delay: 0.5s;
+}
+[data-aos="reveal-right"].aos-animate {
+  transform: scaleX(0);
+}
+
+v
 
 .swiper-pagination span.swiper-pagination-bullet {
 background-color: #4f46e5 !important;

@@ -10,9 +10,9 @@ const Mymarquee = () => {
     //   speed={100}
       >
         <div className='flex py-6 items-center justify-around w-fit gap-10 md:w-[100vw]'>
-        <div className='flex gap-2 text-2xl'><span>*</span><p>Web Development</p></div>
-        <div className='flex gap-2 text-2xl'><span>*</span><p>Graphic Design</p></div>
-        <div className='flex gap-2 text-2xl'><span>*</span><p>UX/UI</p></div>
+        <div className='flex gap-2 text-2xl'><span>*</span><p className="text-2xl font-semibold">Web Development</p></div>
+        <div className='flex gap-2 text-2xl'><span>*</span><p className="text-2xl font-semibold">Graphic Design</p></div>
+        <div className='flex gap-2 text-2xl'><span>*</span><p className="text-2xl font-semibold">UX/UI</p></div>
         </div>
       </Marquee>
     </div>
