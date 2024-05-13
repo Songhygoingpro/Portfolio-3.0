@@ -24,6 +24,12 @@ export default () => {
     AOS.refresh();
     document.removeEventListener('scroll', AOS.refresh); 
     AOS.init({ disable: true }); 
+
+    let elementss = document.querySelectorAll('.reveal-block'); 
+    elementss.forEach((element) => { 
+      element.classList.remove('reveal-block'); 
+    }); 
+  
   };
 
   const enableAOS = () => {

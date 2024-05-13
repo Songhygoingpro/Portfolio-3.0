@@ -1,13 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import pf from "../img/pf.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Resume from "../img/Resume.pdf";
 
 function Home() {
-  AOS.init({
-    once: true,
-  });
 
   return (
     <div className="text-white md:flex grid  justify-center items-center px-4 gap-4  z-0 overflow-hidden w-fit self-center justify-self-center">

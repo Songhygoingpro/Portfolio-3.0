@@ -3,7 +3,6 @@ import To_do from "../img/to_do.png";
 import JS from "../img/icons8-javascript.svg";
 import Tailwind from "../img/icons8-tailwind-css.svg";
 import Reacts from "../img/icons8-react.svg";
-import E_commerce from "../img/project-e-commerce.png";
 import Khmer_new_year_post from "../img/khmer_new_year_post.png";
 import Cafe_logo from "../img/Cafe_logo.png";
 import HRU_logo from "../img/HRU_logo.png";
@@ -34,6 +33,11 @@ function Project() {
     AOS.refresh();
     document.removeEventListener('scroll', AOS.refresh); 
     AOS.init({ disable: true }); 
+    
+    let elementss = document.querySelectorAll('.reveal-block'); 
+    elementss.forEach((element) => { 
+      element.classList.remove('reveal-block'); 
+    }); 
   };
 
   const enableAOS = () => {
