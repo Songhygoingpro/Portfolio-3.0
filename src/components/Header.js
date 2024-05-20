@@ -73,7 +73,7 @@ const Header = () => {
 
   return (
     <div className="w-[100vw] md:w-auto justify-self-center h-12 flex items-center p-8 justify-end md:justify-center mt-4 z-[99]">
-      <div className="md:hidden block overflow-auto">
+      <div className="md:hidden block ">
         <div
           className={`fixed top-4 2xl:top-8 right-4 bg-indigo-600 hover:bg-indigo-600 p-[2px]  z-20 ${
             menuOpen ? "rounded-bl-md rounded-tr-md" : "rounded-md"
@@ -82,46 +82,64 @@ const Header = () => {
           <Hamburger toggled={menuOpen} toggle={handleToggle} size={28} />
         </div>
         <div
-          className="menu grid items-center p-4"
+  className="menu grid items-center p-4"
+  style={{
+    width: menuOpen ? "calc(100vw - 2rem)" : "0",
+    height: menuOpen ? "calc(100dvh - 2rem)" : "0",
+    overflow: "hidden",
+    transition: menuOpen
+      ? "width 0.3s ease-in-out, height 0.3s ease"
+      : "height 0.3s ease 0.7s, width 0.3s ease 0.7s",
+  }}
+>
+  <div
+    className="bg-red-400 overflow-y-auto grid"
+    style={{
+      height: "100%",
+    }}
+  >
+    <ul className="flex flex-col gap-4 p-4">
+      {tabs.map((tab, index) => (
+        <li
+          key={tab}
+          className="text-5xl text-left font-semibold"
           style={{
-            width: menuOpen ? "calc(100vw - 2rem)" : "0",
-            height: menuOpen ? "calc(100dvh - 2rem)" : "0",
-            overflow: "hidden",
-            transition: menuOpen ? "width 0.3s ease-in-out, height 0.3s ease" : "height 0.3s ease 0.7s, width 0.3s ease 0.7s",
+            opacity: menuOpen ? "1" : "0",
+            transition: `opacity 0.3s ease ${
+              menuOpen
+                ? `calc(${index + 1} * 0.15s)`
+                : `calc(${tabs.length + 1 - (index + 1)} * 0.15s)`
+            }`,
           }}
         >
-          <ul
-          className="flex flex-col gap-4"
-        >
-          {tabs.map((tab, index) => (
-            <li
-              key={tab}
-              className="text-5xl text-left font-semibold"
-              style={{
-                opacity: menuOpen ? "1" : "0",
-                transition: `opacity 0.3s ease ${menuOpen ? `calc(${index+1} * 0.15s)` : `calc(${(tabs.length + 1) - (index+1)} * 0.15s)`}`,
-              }}
-            >
-              <a
-                href={`#${tab.toLowerCase()}-anchor`}
-                onClick={() => handleTabClick(tab)}
-              >
-                {tab}.
-              </a>
-            </li>
-          ))}
-        </ul>
-          <div className="flex justify-end self-end">
-            <a href={Resume} className="bg-[#392EF0] p-6 rounded-full block "
-             style={{
-              opacity: menuOpen ? "1" : "0",
-              transition: `opacity 0.3s ease ${menuOpen ? `calc(${tabs.length+1} * 0.15s)` : `calc(${tabs.length - tabs.length} * 0.15s)`}`,
-            }}
-            >
-              <img src={CV} alt="" />
-            </a>
-          </div>
-        </div>
+          <a
+            href={`#${tab.toLowerCase()}-anchor`}
+            onClick={() => handleTabClick(tab)}
+          >
+            {tab}.
+          </a>
+        </li>
+      ))}
+    </ul>
+    <div className="flex justify-end self-end p-4">
+      <a
+        href={Resume}
+        className="bg-[#392EF0] p-6 rounded-full block"
+        style={{
+          opacity: menuOpen ? "1" : "0",
+          transition: `opacity 0.3s ease ${
+            menuOpen
+              ? `calc(${tabs.length + 1} * 0.15s)`
+              : `calc(${tabs.length - tabs.length} * 0.15s)`
+          }`,
+        }}
+      >
+        <img src={CV} alt="Resume" />
+      </a>
+    </div>
+  </div>
+</div>
+
       </div>
       <div className="px-4 py-4 top-4 2xl:top-12 fixed bg-slate-900 md:flex hidden items-center flex-wrap justify-center gap-4 rounded-full">
         {tabs.map((tab) => (
