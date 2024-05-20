@@ -17,7 +17,7 @@ function App() {
           <MatrixBackground />
           <Header/>
           <div className='md:block hidden z-50 absolute top-8 2xl:top-16 transition-[scale_0.3s_ease_0.1s] hover:scale-105  right-20'>
-    <a target='blank' href={Resume}  className='bg-[#04001E] px-6 py-[10px] rounded-full border-2 transition-all hover:bg-gradient-to-r hover:from-violet-600 font-medium hover:to-indigo-600 border-indigo-600' >
+    <a target='blank' href={Resume}  className='bg-[#04001E] px-6 py-[10px] rounded-full border-2 transition-all hover:bg-gradient-to-r hover:from-violet-600 font-medium hover:to-indigo-600 border-indigo-600'>
         Resume
     </a>
 </div>

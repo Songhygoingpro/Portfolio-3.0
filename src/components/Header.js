@@ -73,7 +73,7 @@ const Header = () => {
 
   return (
     <div className="w-[100vw] md:w-auto justify-self-center h-12 flex items-center p-8 justify-end md:justify-center mt-4 z-[99]">
-      <div className="md:hidden block">
+      <div className="md:hidden block overflow-auto">
         <div
           className={`fixed top-4 2xl:top-8 right-4 bg-indigo-600 hover:bg-indigo-600 p-[2px]  z-20 ${
             menuOpen ? "rounded-bl-md rounded-tr-md" : "rounded-md"
@@ -123,7 +123,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 py-4 top-4 fixed bg-slate-900 md:flex hidden items-center flex-wrap justify-center gap-4 rounded-full">
+      <div className="px-4 py-4 top-4 2xl:top-12 fixed bg-slate-900 md:flex hidden items-center flex-wrap justify-center gap-4 rounded-full">
         {tabs.map((tab) => (
           <Chip text={tab} selected={selected === tab} tabId={tab} key={tab} />
         ))}
