@@ -93,7 +93,7 @@ const Header = () => {
   }}
 >
   <div
-    className="bg-red-400 overflow-y-auto grid"
+    className=" overflow-y-auto grid"
     style={{
       height: "100%",
     }}
